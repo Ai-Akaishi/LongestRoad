@@ -17,19 +17,15 @@ team join Blu 青
 team join Yel 黄
 
 scoreboard objectives add PathNumber dummy
+scoreboard players set #2 PathNumber 2
 
 setblock 0 0 0 minecraft:bedrock
 setblock 0 1 0 minecraft:bedrock
 setblock 0 2 0 minecraft:bedrock
 setblock 0 3 0 minecraft:bedrock
-execute as @e[tag=Node] at @s run setblock ~ 0 ~ minecraft:bedrock
-execute as @e[tag=Edge] at @s run setblock ~ 0 ~ minecraft:bedrock
-execute as @e[tag=Edge] at @s run setblock ~ 1 ~ minecraft:bedrock
-
 setblock 0 0 0 minecraft:jukebox{RecordItem:{id:"minecraft:stone",Count:1b,tag:{}}} replace
 setblock 0 1 0 minecraft:jukebox{RecordItem:{id:"minecraft:stone",Count:1b,tag:{}}} replace
 setblock 0 2 0 minecraft:jukebox{RecordItem:{id:"minecraft:stone",Count:1b,tag:{}}} replace
 setblock 0 3 0 minecraft:jukebox{RecordItem:{id:"minecraft:stone",Count:1b,tag:{}}} replace
-execute as @e[tag=Node] at @s run setblock ~ 0 ~ minecraft:jukebox{RecordItem:{id:"minecraft:stone",Count:1b,tag:{}}} replace
-execute as @e[tag=Edge] at @s run setblock ~ 0 ~ minecraft:jukebox{RecordItem:{id:"minecraft:stone",Count:1b,tag:{}}} replace
-execute as @e[tag=Edge] at @s run setblock ~ 1 ~ minecraft:jukebox{RecordItem:{id:"minecraft:stone",Count:1b,tag:{}}} replace
+
+execute as @e[tag=Edge] at @s run fill ~ 0 ~ ~ 3 ~ minecraft:air
