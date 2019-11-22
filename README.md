@@ -22,4 +22,7 @@ Minecraftのコマンドで、カタンの最長交易路(Longest Road)を見つ
 
 # 動画
 
+- v1  
 https://twitter.com/AiAkaishi/status/1197572802074693632
+- v2  
+https://twitter.com/AiAkaishi/status/1197861344671756288
